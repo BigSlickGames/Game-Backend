@@ -14,7 +14,7 @@ app.get("/ping", (_, res) => {
   res.json({ pong: true, at: new Date().toISOString() });
 });
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`[${process.env.SERVICE_NAME || "backend"}] listening on http://localhost:${PORT}`);
 });
